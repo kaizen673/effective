@@ -1,0 +1,62 @@
+Пример запроса:
+
+GET https://api.petrushkazelenaya.ru/api/v1/partner-stores?city=Moscow
+
+
+Пример ответа REST API:
+
+{
+  "stores": [
+    {
+      "id": 1,
+      "name": "METRO",
+      "logo_url": "https://cdn.petrushkazelenaya.ru/logos/metro.png",
+      "delivery": {
+        "type": "scheduled",
+        "text": "Ближайшая доставка сегодня 21:00-23:00",
+        "date": "2026-07-10",
+        "time_from": "21:00",
+        "time_to": "23:00"
+      },
+      "external_url": "https://online.metro-cc.ru/"
+    },
+    {
+      "id": 2,
+      "name": "Ашан",
+      "logo_url": "https://cdn.petrushkazelenaya.ru/logos/auchan.png",
+      "delivery": {
+        "type": "scheduled",
+        "text": "Ближайшая доставка сегодня 18:00-20:00",
+        "date": "2026-07-10",
+        "time_from": "18:00",
+        "time_to": "20:00"
+      },
+      "external_url": "https://www.auchan.ru/"
+    },
+    {
+      "id": 3,
+      "name": "ВкусВилл",
+      "logo_url": "https://cdn.petrushkazelenaya.ru/logos/vkusvill.png",
+      "delivery": {
+        "type": "fast",
+        "text": "Быстрая доставка от 20 до 60 минут",
+        "min_minutes": 20,
+        "max_minutes": 60
+      },
+      "external_url": "https://vkusvill.ru/"
+    },
+    {
+      "id": 4,
+      "name": "ВИКТОРИЯ",
+      "logo_url": "https://cdn.petrushkazelenaya.ru/logos/victoria.png",
+      "delivery": {
+        "type": "scheduled",
+        "text": "Ближайшая доставка сегодня 17:00-19:00",
+        "date": "2026-07-10",
+        "time_from": "17:00",
+        "time_to": "19:00"
+      },
+      "external_url": "https://victoria-group.ru/"
+    }
+  ]
+}
